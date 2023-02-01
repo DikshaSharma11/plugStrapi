@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_seo_seoinformations",
+  "info": {
+    "displayName": "seoinformation",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "seoTitle": {
+      "type": "string",
+      "required": true
+    },
+    "seoDescription": {
+      "type": "richtext"
+    }
+  }
+}

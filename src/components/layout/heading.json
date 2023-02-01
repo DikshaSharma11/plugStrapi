@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layout_headings",
+  "info": {
+    "displayName": "heading"
+  },
+  "options": {},
+  "attributes": {
+    "firstheading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "richtext"
+    }
+  }
+}
