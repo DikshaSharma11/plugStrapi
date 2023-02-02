@@ -1,38 +1,33 @@
+"use strict"
 
-module.exports ={
-    kind:"collectionType",
-    collectionName:"prjects",
-    info:{
-        singularName:"project",
-        pluralName:"projects",
-        displayName:"project"
+const projectSchema=require("./project-schema");
+
+module.exports={
+    kind: "collectionType",
+    collectionName: "projects",
+    info: {
+        singularName: "project",
+        pluralName: "projects",
+        displayName: "Project"
     },
-    options:{
-        draftAndPublish:false,
+    options: {
+        draftAndPublish: false
     },
-    attributes:{
-        repositoryid:{
-            type:"uid",
-            unique:"true",
+    attributes: {
+        repositoryId: {
+            type: "uid",
+            unique: true,
         },
-   
-        title:{
-            type:"string",
-            required:"true",
-            unique:"true",
+        title: {
+            type: "string",
+            required: true,
+            unique: true,
         },
-        shortDescription:{
-            type:"string",
-            
+        shortDescription: {
+            type: "string",
         },
-        longDescription:{
-            type:"richText"
-        },
-        repositoryUrl:{
-            type:"string"
+        repositoryUrl: {
+            type: "string",
         }
-
     }
-
-
 }

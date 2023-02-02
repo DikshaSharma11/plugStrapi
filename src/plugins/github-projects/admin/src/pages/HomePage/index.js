@@ -6,12 +6,13 @@
 
 import React from 'react';
 // import PropTypes from 'prop-types';
-import Repo  from '../../components/repo';
+import pluginId from '../../pluginId';
 
 const HomePage = () => {
   return (
     <div>
-      <Repo/>
+      <h1>{pluginId}&apos;s HomePage</h1>
+      <p>Happy coding</p>
     </div>
   );
 };
