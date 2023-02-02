@@ -117,9 +117,7 @@ const deletedProject = async (repo)=>{
                     <Typography textColor="neutral800">{name}</Typography>
                   </Td>
                   <Td>
-                    <Typography textColor="neutral800">{<h3>$
-                      
-                   {shortDescription}</h3>}</Typography>
+                    <Typography textColor="neutral800">{<h3>shortDescription</h3>}</Typography>
                   </Td>
                   <Td>
                     <Typography textColor="neutral800"><Link href={url} isExternal={url}></Link></Typography>
@@ -128,7 +126,8 @@ const deletedProject = async (repo)=>{
                   <Td>
                     { projectId ?
                   (  <Flex>
-                    <Link to={`/content-manager/collectionType/plugin::github-project.project/${projectId}`}>
+                    
+                    <Link to={`/content-manager/collectionType/plugin::github-projects.project/${projectId}`}>
                       <IconButton onClick={() => console.log('edit')} label="Edit" noBorder icon={<Pencil />} /></Link>
                       <Box paddingLeft={1}>
                         <IconButton onClick={() => deletedProject(repo)} label="Delete" noBorder icon={<Trash />} />
