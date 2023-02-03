@@ -21,7 +21,7 @@ const Repo = () => {
   }
 
   const createProject = async (repo) => {
-    const response = await axios.post("/github-project/project", repo);
+    const response = await axios.post("/github-projects/project", repo);
     console.log(response);
     if (response && response.data) {
       setRepos(repos.map((item) => item.id !== repo.id ? item : {
